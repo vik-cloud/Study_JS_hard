@@ -1,9 +1,10 @@
 let num = 266219;
-let arrNum = String(num).split("").map(Number);
+let numLength = String(num).length;
+let numArr = String(num).split("").map(Number);
 let mult = 1;
 
-for (let i = 0; i < 6; i++){
-  mult *= arrNum[i];
+for (let i = 0; i < numLength; i++){
+  mult *= numArr[i];
 }
 console.log("Произведение цифр числа 266219: " + mult);
 
